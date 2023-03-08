@@ -2,15 +2,23 @@
 import React, { useContext } from "react";
 import { UserContext } from "../userContext.ts";
 import { users } from "../../Interfaces/users";
+import './Card.css'
+
 function Card() {
-  const user = useContext(UserContext);
-  const { id, name, job, birth, joined, expire, web, phone } =
+  const { id, name, url, job, birth, joined, expire, web, phone } =
     useContext<users>(UserContext);
 
   return (
   <div className="CardContainer">
-    {id}
-    {name}
+    <div>
+        <img src={url}/>
+    </div>
+    <div className="Name">
+        {name}
+    </div>
+    <div className="Job">
+        {job}
+    </div>
   </div>
   );
 }

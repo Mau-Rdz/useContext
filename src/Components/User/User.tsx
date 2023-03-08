@@ -8,6 +8,7 @@ function User() {
   const [user, setUser] = useState<users>({
     id: 123,
     name: "Eduardo Salazar",
+    url: "https://www.marismith.com/wp-content/uploads/2014/07/facebook-profile-blank-face.jpeg",
     job: "Data Analyst",
     birth: "12/12/2000",
     joined: "12/12/2012",
@@ -18,7 +19,7 @@ function User() {
   return (
     <UserContext.Provider value={user}>
       <div>
-        <Card value={user}/>
+        <Card/>
       </div>
     </UserContext.Provider>
   );

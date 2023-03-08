@@ -1,6 +1,7 @@
 export interface users {
     id: number,
     name: string,
+    url: string,
     job: string,
     birth: string,
     joined: string,

@@ -1,0 +1,25 @@
+.CardContainer {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 15rem;
+    background-color: aqua;
+    width: 400px;
+}
+
+.Name {
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.job {
+    font-size: small;
+}
+
+img { 
+    width: 50px;
+    height: 50px;
+}
